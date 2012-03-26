@@ -16,7 +16,9 @@ class AuthToken(models.Model):
     def save(self, *args, **kwargs):
         'save this instance'
         if self.expires is None:
-            offset = getattr(settings, 'AUTOAUTH_EXPIRY', timedelta(days=1))
+            offset = getattr(
+                settings, 'AUTOAUTH_EXPIRY', default.AUTOAUTH_EXPIRY
+            )
             self.expires = datetime.today + offset
 
         if self.hash is None:
