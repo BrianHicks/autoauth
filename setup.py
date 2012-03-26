@@ -10,11 +10,12 @@ setup(
     ],
 
     # testing
-    #test_suite = 'nose.collector',
-    #tests_require = [
-        #'nose',
-        #'mock',
-    #],
+    test_suite = 'runtests.runtests',
+    tests_require = [
+        'nose',
+        'django-nose',
+        'mock',
+    ],
 
     # metadata for PyPi and others
     author = 'Brian Hicks',
