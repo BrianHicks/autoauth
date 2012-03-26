@@ -6,7 +6,7 @@ setup(
     packages = find_packages(),
 
     install_requires = [
-        'django',
+        'django >= 1.3.1',
     ],
 
     # testing
@@ -26,8 +26,12 @@ setup(
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Natural Language :: English',
+        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
-        'Topic :: Utilities',
+        'Framework :: Django',
+        'Intended Audience :: Developers',
+        'Operating System :: OS Independent',
+        'Topic :: Software Development',
     ],
 
     long_description = open('README.md').read(),
