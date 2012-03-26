@@ -8,3 +8,4 @@ env:
 install:
   - pip install -q Django==$DJANGO_VERSION --use-mirrors
   - python setup.py -q install
+script: python setup.py test
