@@ -1,5 +1,7 @@
 # Autoauth
 
+[![Build Status](https://secure.travis-ci.org/BrianHicks/autoauth.png?branch=develop)](http://travis-ci.org/BrianHicks/autoauth)
+
 Autoauth will log your users in automatically when they click a link.
 
 ## Installation
