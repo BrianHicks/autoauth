@@ -29,6 +29,7 @@ class AuthToken(models.Model):
             self.expires = datetime.now() + offset
 
         if self.hash == '':
+            print self.expires
             self.hash = sha1(
                 self.expires.isoformat() + str(self.user.pk)
             ).hexdigest()
