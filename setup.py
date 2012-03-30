@@ -15,6 +15,7 @@ setup(
         'nose',
         'django-nose',
         'mock',
+        'milkman',
     ],
 
     # metadata for PyPi and others
